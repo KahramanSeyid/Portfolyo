@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyom</title>
+    <link rel="icon" href="images/Horse.jpg" type="image/x-icon" /> <!-- Sayfaya İkon Eklemesi Yaptım.  -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Montserrat:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <section id="cover"> <!--Bölümleri ayırmak için kullandım. İd olmasının sebebi ise tek seferlik olacak -->
+        <div class="container"><!-- içeriklerin olduğu kısımdır. -->
+            <div class="row"> <!-- satırlama oluşturmak için kullandım-->
+                <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+                    <!--navbar-light dediği navbar 
+        içindeki linklerin açık renkte olmasıdır dark yaparsan renk değişir. bg-light ise arka rengidir. onun yerine bg-inverse kullan -->
+                    <a class="navbar-brand" href="#"> <img src="images/Horse.jpg" alt="Seyid Website LOGO" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="services.html">SERVICES</a> <!--Sayfa içi link verme  -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolyo.html">PORTFOLYO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutUs">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row text-center">
+                <!-- text-center yazıyı ortalar. Yazı eklemek için Yeni bir satır ve satır içine;  -->
+                <div class="col-sm-12"> <!-- 12 sütundan oluşan sütun oluşturdum  -->
+                    <h1>Welcome to Our Studio!</h1>
+
+                </div>
+                <div class="col-sm-12"> <!-- 12 sütundan oluşan sütun oluşturdum  -->
+                    <h2>IT'S NICE TO MEET YOU</h2>
+
+                </div>
+                <div class="col-sm-12"> <!-- 12 sütundan oluşan sütun oluşturdum  -->
+                    <a href="#"><button type="button" class="btn btn-dark btn-lg">TELL ME MORE</button></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="services-top text-center">
+                <h3>SERVICES</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="services-content">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="item-circle"><!-- bu divi eklediğim ikonun etrafındaki daire için ekledim  -->
+                            <i class="fa-solid fa-layer-group fa-2x"></i>
+                        </div>
+                        <h4>E-Commerce</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, provident?Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Praesentium.</p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="item-circle"><!-- bu divi eklediğim ikonun etrafındaki daire için ekledim  -->
+                            <i class="fa-solid fa-handshake fa-2x"></i>
+                        </div>
+                        <h4>E-Commerce</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, provident?Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Praesentium.</p>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="item-circle"><!-- bu divi eklediğim ikonun etrafındaki daire için ekledim  -->
+                            <i class="fa-brands fa-codepen fa-2x"></i>
+                        </div>
+                        <h4>E-Commerce</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, provident?Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Praesentium.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="portfolio"> <!-- Portfolyo sayfasını ekleyeceğim bölümdür -->
+        <div class="container"><!--Portfolyo sayfamın içeriklerinin ekleneceği bölümdür  -->
+            <div class="portfolio-top text-center"> <!-- Portfolyo başlığı ve Paragrafının ekleneceği bölümdür. -->
+                <h3>OUR PORTFOLIO</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</P>
+            </div>
+            <div class="portfolio-content"> <!--Kartların yani resimlerin ekleneceği bölümdür. -->
+                <div class="row"> <!-- Kartların ekleneceği 1.satırdır. -->
+                    <div class="col-sm-4 ">
+                        <!-- kartların ekleneceği sütunları eklemiş oldum 4 bölümlük sütunlar ekledim.-->
+                        <div class="card"> <!-- 1.ci Kartımın ekleneceği bölümldür. -->
+                            <img src="images/Product1.png" alt="Satın Alma" />
+                            <div class="card-block">
+                                <!--Kartımın Hemen altında bulunan başlık ve p eklenecek olan bölümdür. -->
+                                <h4 class="card-title">FEATURES PROJECT</h4><!-- kart başlığı-->
+                                <p class="card-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+                                <!-- kart paragrafı-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- kartların ekleneceği sütunları eklemiş oldum 4 bölümlük sütunlar ekledim.-->
+                        <div class="card"> <!-- 2.ci Kartımın ekleneceği bölümldür. -->
+                            <img src="images/Product2.png" alt="Satın Alma" />
+                            <div class="card-block">
+                                <!--Kartımın Hemen altında bulunan başlık ve p eklenecek olan bölümdür. -->
+                                <h4 class="card-title">LOGO PROJECT</h4><!-- kart başlığı-->
+                                <p class="card-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+                                <!-- kart paragrafı-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- kartların ekleneceği sütunları eklemiş oldum 4 bölümlük sütunlar ekledim.-->
+                        <div class="card"> <!-- 3.cü Kartımın ekleneceği bölümldür. -->
+                            <img src="images/Product3.png" alt="Satın Alma" />
+                            <div class="card-block">
+                                <!--Kartımın Hemen altında bulunan başlık ve p eklenecek olan bölümdür. -->
+                                <h4 class="card-title">EOWYN PROJECT</h4><!-- kart başlığı-->
+                                <p class="card-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+                                <!-- kart paragrafı-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 2. bir satır ekleyip kalan ürünlerim için 2. bir bölüm yapıyorum -->
+                <div class="row"> <!-- Kartların ekleneceği 2.satırdır. -->
+                    <div class="col-sm-4">
+                        <!-- kartların ekleneceği sütunları eklemiş oldum 4 bölümlük sütunlar ekledim.-->
+                        <div class="card"> <!-- 1.ci Kartımın ekleneceği bölümldür. -->
+                            <img src="images/Product4.png" alt="Satın Alma" />
+                            <div class="card-block">
+                                <!--Kartımın Hemen altında bulunan başlık ve p eklenecek olan bölümdür. -->
+                                <h4 class="card-title">SOFTWARE PROJECT</h4><!-- kart başlığı-->
+                                <p class="card-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+                                <!-- kart paragrafı-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- kartların ekleneceği sütunları eklemiş oldum 4 bölümlük sütunlar ekledim.-->
+                        <div class="card"> <!-- 2.ci Kartımın ekleneceği bölümldür. -->
+                            <img src="images/Product5.png" alt="Satın Alma" />
+                            <div class="card-block">
+                                <!--Kartımın Hemen altında bulunan başlık ve p eklenecek olan bölümdür. -->
+                                <h4 class="card-title">LOTR PROJECT</h4><!-- kart başlığı-->
+                                <p class="card-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+                                <!-- kart paragrafı-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- kartların ekleneceği sütunları eklemiş oldum 4 bölümlük sütunlar ekledim.-->
+                        <div class="card"> <!-- 3.cü Kartımın ekleneceği bölümldür. -->
+                            <img src="images/Product6.png" alt="Satın Alma" />
+                            <div class="card-block">
+                                <!--Kartımın Hemen altında bulunan başlık ve p eklenecek olan bölümdür. -->
+                                <h4 class="card-title">MINASTIRITH PROJECT</h4><!-- kart başlığı-->
+                                <p class="card-subtitle text-muted">Lorem ipsum dolor sit amet.</p>
+                                <!-- kart paragrafı-->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="aboutUs"> <!-- hakkımda kısmını ekleyeceğim bölümdür. -->
+        <div class="container"> <!-- hakkımda içeriklerinin ekleneceği bölümdür-->
+            <div class="aboutUs-top text-center"><!-- başlık ve paragrafların ekleneceği bölümdür -->
+                <h3>ABOUT US</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</P>
+            </div>
+            <div class="aboutUs-content"> <!-- satır, sütun ve diğer başlık resimlerin ekleneceği bölümdür -->
+                <div class="row"> <!-- 1.satırım -->
+                    <div class="col-sm-4 text-right">
+                        <!-- sadece yazıların ekleneceği sütunum text-right ile yazılar sağa yanaşık -->
+                        <h4 class="card-title">July 2010</h4>
+                        <h4 class="card-title">Our Humble Beginnings</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, repudiandae est? Iure quisquam distinctio itaque aliquid.</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <!-- sadece resimin ekleneceği bölümdür. text-center ile resim ortalandı  -->
+                        <img src="images/AboutUs1.jpeg" alt="hakkımda">
+                    </div>
+                </div>
+
+                <!-- Satırları böyle yapmamın sebebi tasarımla alakalı. 
+Her satırın yazı ve resmi yan yana olmasın diye bana kalmış yani istesem tek rowla da halledebilirim tıpkı yukarıda yaptığım gibi -->
+
+                <!-- tasarımda yazı resim sonra resim yazı gelsin istiyorum -->
+                <div class="row"> <!-- 2.satırım -->
+                    <div class="col-sm-4 offset-sm-4 text-center"> <!-- sadece resimin ekleneceği bölümdür. text-center ile resim ortalandı  
+                    offset-sm-4 ile bir önceki sütunu boş bırakıp diğer sütuna yazdı-->
+                        <img src="images/AboutUs2.jpg" alt="hakkımda">
+                    </div>
+                    <div class="col-sm-4"> <!-- sadece yazıların ekleneceği sütunum -->
+                        <h4 class="card-title">July 2010</h4>
+                        <h4 class="card-title">Our Humble Beginnings</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, repudiandae est? Iure quisquam distinctio itaque aliquid.</p>
+                    </div>
+
+                </div>
+                <!-- Aşağıdaki iki row da yukarıdakilerin aynısıdır. açıklama yapmadım. -->
+
+                <div class="row">
+                    <div class="col-sm-4 text-right">
+                        <h4 class="card-title">July 2010</h4>
+                        <h4 class="card-title">Our Humble Beginnings</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, repudiandae est? Iure quisquam distinctio itaque aliquid.</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img src="images/AboutUs3.jpg" alt="hakkımda">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 offset-sm-4 text-center">
+                        <img src="images/AboutUs4.jpg" alt="hakkımda">
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 class="card-title">July 2010</h4>
+                        <h4 class="card-title">Our Humble Beginnings</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt, repudiandae est? Iure quisquam distinctio itaque aliquid.</p>
+                    </div>
+
+                </div>
+
+                <!-- Burada oluşturduğum satır çok daha önemli çünkü resim kullanmak yerine kendimiz güzel bir şey yapacağız. -->
+                <div class="row">
+                    <div class="col-sm-4 offset-sm-4 text-center"> <!--offset-sm-4 ile ilk sütunu boş bırakmış oldum -->
+                        <div class="about-circle"> <!-- oluşturacağım çember için eklediğim div'im  -->
+                            <p class="yellow-text">OUR <br> STORY <br> CONTINUES...</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Yukarıdakilerden hiç bir farkı yok -->
+    <section id="team">
+        <div class="container">
+            <div class="team-top text-center">
+                <h3>OUR AMAZING TEAM</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</P>
+            </div>
+            <div class="team-content">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <div class="team-circle"></div>
+                        <img src="images/elon-musk.jpg" alt="elon-musk ">
+                        <h4>Elon Musk</h4>
+                        <h6>Author</h6>
+                        <ul class="social-icons">
+                            <li class="social-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li class="social-icon"><i class="fa-brands fa-instagram"></i>
+                            </li>
+                            <li class="social-icon"><i class="fa-brands fa-linkedin"></i>
+                            </li>
+                        </ul>
+                        <p>Lorem, ipsum dolor.</p>
+
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="team-circle"></div>
+                        <img src="images/bill.jpg" alt="bill-gates">
+                        <h4>Bill Gates</h4>
+                        <h6>Marketer</h6>
+
+                        <ul class="social-icons">
+                            <li class="social-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li class="social-icon"><i class="fa-brands fa-instagram"></i>
+                            </li>
+                            <li class="social-icon"><i class="fa-brands fa-linkedin"></i>
+                            </li>
+                        </ul>
+                        <p>Lorem, ipsum dolor.</p>
+
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div class="team-circle"></div>
+                        <img src="images/andyrubin.jpg" alt="andy-rubin ">
+                        <h4>Andy Rubin</h4>
+                        <h6>Grafic Designer</h6>
+                        <ul class="social-icons">
+                            <li class="social-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </li>
+                            <li class="social-icon"><i class="fa-brands fa-linkedin"></i>
+                            </li>
+                        </ul>
+                        <p>Lorem, ipsum dolor.</p>
+
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <p class="row-text ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Iure, atque. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quo minus
+                        sit, unde cumque fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+                        earum.</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+    <section id="partners">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-3">
+                    <img style="height: 200px; width: 250px;" src="images/WordPress.png" alt="WordPress">
+                </div>
+                <div class="col-sm-3">
+                    <img style="padding-top: 80px; height: 200px; width: 250px;" src="images/envato.png"
+                        alt="WordPress">
+                </div>
+                <div class="col-sm-3">
+                    <img style="padding-top: 90px; width: 250px;" src="images/google.png" alt="WordPress">
+                </div>
+                <div class="col-sm-3">
+                    <img style="padding-top: 35px; width: 250px;" src="images/GitHub-logo.png" alt="WordPress">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="contact-top text-center">
+                <h3>CONTACT US</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque.</P>
+                <div class="contact-content">
+                    <form class="golden-form" role="form" method="post">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-element">
+                                    <input type="text" class="golden-form-element" id="name" name="name"
+                                        placeholder="Your Name*">
+                                </div>
+                                <div class="form-element">
+                                    <input type="email" class="golden-form-element" id="email" name="email"
+                                        placeholder="Your Email*">
+                                </div>
+                                <div class="form-element">
+                                    <input type="text" class="golden-form-element" id="subject" name="subject"
+                                        placeholder="SUBJECT*">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-element">
+                                <textarea class="golden-form-element" id="message" name="message" placeholder="YOUR MESSAGE"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="form-element">
+                                <input class="btn btn-dark btn-lg" type="submit" id="submit" name="submit" value="SEND MESSAGE">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-4">
+                  <p>Tüm Hakları Saklıdır&copy;Copyright 2019 seyidmhmmdk.com</p>
+                </div>
+                <div class="col-sm-4 ">
+                    <ul class="company-social-icons">
+                        <li class="company-social-icon"><i class="fa-brands fa-x-twitter"></i></li>
+                        <li class="company-social-icon"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="company-social-icon"><i class="fa-brands fa-pinterest"></i></li>
+                        <li class="company-social-icon"><i class="fa-brands fa-google-plus-g"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <section>
+    </section>
+
+    <a href="#body" id="backtotop">
+        <i class="fas fa-chevron-circle-up"></i>
+    </a>
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

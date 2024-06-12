@@ -1,0 +1,463 @@
+html,
+body,
+#cover{
+
+    scroll-behavior: smooth;
+    height: 100%;/* sayfa boyutu tam sayfa olsun istedim  */
+}
+#cover{
+    height: 100%;
+    background: url('../images/anaresim.png') no-repeat center center fixed;
+    /* İk önce arkaya eklemek istediğim resmin adresini tanımladım sonra tekrar etmesin diye no-repeat
+    dikeyde ve yatayda ortaya gelsin diye center center ve scroll ile hareket etmessin diye fixed dedim  */
+    background-size: cover;
+    /* background-size: cover; diyerek tüm ekranı kaplasın istedim */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* diğer coverlar ilki chrome için, diğeri mozilla için, bir diğeri opera tarayıcıları için */
+    
+}
+.fixed-top{
+    /* Aşağıdakileri yapmamın sebebi navbarımı ortalamak. ilk başta çok sağa ve sola dönüktü */
+    max-width: 1140px; 
+    margin: 20px auto;
+}
+.navbar-brand img{
+    width: 50px;
+}
+.navbar-brand img:hover{ /*Butonun üzerine gelince buton büyüyor. */
+    transform: scale(1.5);
+}
+
+h1{
+     margin-top: 20%; /*yukarıdan %20 lik bir genişlik verdim h2 ve buttonum da onunla beraber aşağı gelecek
+     sayfa küçülünce de sıkıntı yaratmayacak */
+     font-family: 'Barlow', sans-serif;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     color: #ffffff;
+     font-size: 40px;
+     font-style: italic;
+     margin-bottom: 30px;
+     
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.btn-dark{
+    background-color: #233142;
+    /* Buton Etrafındaki çizgiyi istemiyorsam;
+     */ border-style: none;
+     /* Eğer girdiğim text küçük harfse ve ben büyük harf yapmak istiyorsam; */
+     text-transform: uppercase;
+     font-family:'Montserrat',Bold ;
+     font-size: 18px;
+}
+a.nav-link{
+    color: white !important;
+    /* linklerin üzerine gelince renk geçişi yavaş olsun diye ; */
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+   
+}
+a.nav-link:hover{
+    color: gray !important;
+    /* linklerin üzerine gelince font büyüsün diye; */
+    font-size: large;
+
+}
+#services{
+    /* Services bölümünün ekran büyüklüğü ve arka plan rengini ayarladım */
+    height: 100%;
+    background-color: #233142;
+}
+.services-top{
+    /* Services yazısı ve ona ait olan paragrafın div kısmının bulunduğu classtır.
+    Yazı rengini yazının ortalanması ve yukarıdan aşağıya olan mesafesini ayatladım */
+    color: #ffffff;
+    text-align: center;
+    padding: 150px;
+}
+.services-top h3{
+    /* sadece services başlık yazısının font ayarlarını içeren class */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+.services-top p{
+    /* sadece services'e ait paragraf yazısının font ayarlarını içeren class */
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+}
+.services-content{
+    /* sadece içeriğin ortalanmasını sağladım */
+    text-align: center;
+}
+.col-sm-4{
+    /* içerikte bulunan sütunların yazı rengini ayarladım */
+    color: #ffffff;
+}
+.col-sm-4 h4{
+     /* içerikte bulunan sütunlardaki başlık fontlarını ayarladım */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* başlık ve ikon arasındaki boşluktur */
+    margin-top: 10px;
+}
+.col-sm-4 p{
+    /* sadece içerikte bulunan paragrafların font ayarlarını içeren class */
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    /* paragraf ve başlık arasındaki boşluktur */
+    margin-top: 10px;
+}
+.item-circle{
+    /* ikonun içine girdiği çemberin ayarları */
+    border: 3px solid;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 1500px;
+}
+.services-content i{
+    /* Burada çemberin tam oratsına gelecek biçimde ikonları ayarladım  */
+    line-height: 70px;
+}
+
+#portfolio{
+    /* portfolio bölümünün ekran büyüklüğü ve arka plan rengini ayarladım */
+    /* height: 100%; aboutUs Bölümünü bozduğu için şimdilik açığa aldım */ 
+    background-color: #f7f7f7; 
+    /* background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 0%); */
+    padding: 130px 0;
+    text-align: center;
+}
+
+.portfolio-content{
+     /* sadece içeriğin çevre uzaklık ayarlarını sağladım */
+    padding-top:60px;
+    margin-top: 10px;
+
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+   
+}
+.portfolio-top h3{
+     /* sadece portfolio başlık yazısının font ayarlarını içeren class */
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 40px;
+
+}
+.portfolio-top p{
+    /* sadece portfolio'ya ait paragraf yazısının font ayarlarını içeren class */
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+}
+.card{
+    /* Kartın üzerine gelince arkasında gölge olsun ve biraz büyüsün diye; */
+    /* background: #edf5f7; */
+    margin-top: 35px;
+    background-color: #d9dad7;
+    padding: 25px 10px; 
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: box-shadow .6s;
+    
+}
+.card:hover{
+    /* Kart Üzerine gelince gölgenin oluşma ve bitme renk ve süresini oluşturdum yukarıdaki olmadan çalışmaz */
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+}
+.portfolio-content .card-title{
+    /* Kart başlıkları stil ve büyüklüğü; */
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.portfolio-content .card-subtitle{
+    /* Kart içerikleri ve büyüklüğü; */
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    font-style: italic;
+}
+#aboutUs{
+   padding-top: 120px;
+   padding-bottom: 30px;
+}
+.aboutUs-top{
+    padding-bottom: 100px;
+}
+.aboutUs-top h4,h3{
+    /* sadece portfolio başlık yazısının font ayarlarını içeren class */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+.aboutUs-top p{
+   /* sadece portfolio'ya ait paragraf yazısının font ayarlarını içeren class */
+   font-family: 'Droid Serif', serif;
+   font-size: 16px;
+   font-style: italic;
+   color: #777;
+}
+.aboutUs-content .card-title{
+    color: black;
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.aboutUs-content .row{
+    margin-bottom: 90px;
+}
+
+.aboutUs-content img{
+    height: 180px; 
+    width: 180px; 
+    border-radius: 50%;
+    border-radius: 180px;
+    border: 7px solid #f1f1f1;
+}
+/* Resimlerin ortasındaki gri çizgi için; */
+.aboutUs-content{
+    position: relative; /* aboutUs-content kadar yer kaplasın */
+}
+/* çizgi abaout kontentin altına yani içeriklerin altına gelsin diye; */
+.aboutUs-content:before{
+   top: 0;
+   bottom: 0;
+   position: absolute;
+   content: " ";
+   /* çizgi kalınlığı 4 px */
+   width: 4px;
+   background-color: #f1f1f1;
+   left: 50%;
+   margin: -2px;
+}
+/* OUR
+STORY
+CONTINUES yazısının arkasına daire yapmak için ; */
+.about-circle{
+    position: relative;
+}
+.about-circle:before{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 180px;
+    height: 180px;
+    background-color: #455d7a;
+    border-radius: 180px;
+    border: 7px solid #f1f1f1;
+    left: 50%;
+    margin-left: -91px;
+}
+.about-circle .yellow-text{
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    
+}
+#team{
+    background-color: #f7f7f7; 
+    padding-top: 120px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.team-content{
+    /* sadece içeriğin çevre uzaklık ayarlarını sağladım */
+    padding-top:60px;
+    margin-top: 10px;
+}
+.team-top h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+.team-top p{
+    /* sadece team'a ait paragraf yazısının font ayarlarını içeren class */
+   font-family: 'Droid Serif', serif;
+   font-size: 16px;
+   font-style: italic;
+   color: #777;
+}
+.team-content img{
+    height: 180px; 
+    width: 180px; 
+    border-radius: 50%;
+    border-radius: 180px;
+    border: 7px solid #f1f1f1;
+
+}
+.team-content h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.team-content h6{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+    color: #777;
+}
+.team-content p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+    color: #777;
+}
+.social-icons{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+}
+.social-icon{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social-icon .fa-brands{
+    border: 2px solid #000 ;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    line-height: 28px;
+}
+
+.row-text{
+    margin-top: 50px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+#partners{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+#contact{
+    height: 100%;
+    background: url('../images/world1.jpg') no-repeat center center fixed;
+    /* İk önce arkaya eklemek istediğim resmin adresini tanımladım sonra tekrar etmesin diye no-repeat
+    dikeyde ve yatayda ortaya gelsin diye center center ve scroll ile hareket etmessin diye fixed dedim  */
+    background-size: cover;
+    /* background-size: cover; diyerek tüm ekranı kaplasın istedim */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* diğer coverlar ilki chrome için, diğeri mozilla için, bir diğeri opera tarayıcıları için */
+    padding: 120px 0;
+}
+.contact-top h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.contact-top p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+    color: white;
+    margin-bottom: 70px;
+}
+#name,#email,#subject{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 26px;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-left: 5%;
+}
+#message{
+    width: 90%;
+    height: 203px;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: 5%;
+
+}
+.golden-form-element{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+    color: #777;
+}
+#footer{
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+}
+.company-social-icons{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    list-style: none;
+
+}
+.company-social-icon{
+    padding-top: 12px ;
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.company-social-icon .fa-brands{
+    width: 50px;
+    height: 50px;
+}
+
+/* Sağdaki Küçük Top */
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#backtotop i {
+    color: #233142;
+    font-size: 45px;
+    transition: color .6s;
+}
+#backtotop i:hover {
+    color:#455d7a;
+}
+
+
+
+
+
+
+
